@@ -1,0 +1,156 @@
+{% extends "whitegarden/layout/base.html" %} 
+{% block title %}
+Floor 5
+{% endblock %}
+{% block content %}
+<div class="row" style="margin-top: 65px">
+  <!-- BLock 1 -->
+  <div class="d-flex justify-content-center shadow-lg ">
+    <div class="col p-3">
+        <div class="card text-white mb-1 gx-1 shadow-lg">
+          <div class="card-header text-center bg-light fs-1" style="color: black">
+            สถานะการใช้พลังงาน ของตึกชั้นที่ 5
+          </div>
+          <div class="card-body bg-warning" style="color: black">
+            <div class="row mt-1">
+              <div class="col">
+                <div class="card">
+                  <h5 class="card-header text-center">พลังงานรวมของชั้น 5</h5> 
+                    <p id="kwhmainf5" class="card-text text-center fs-1 mt-5" style="height: 75px;"></p>   
+                </div>
+              </div>
+            </div> 
+             <!-- topic 2  -->
+             <div class="row mt-1">
+                <div class="col">
+                  <div class="card">
+                    <h5 class="card-header text-center">ห้อง</h5>
+                      <div class="row m-3">
+                          <div class="col">
+                              <div id ="bgwalkwayf5" class="card shadow-lg">
+                                  <h5 class="card-header text-center">ไฟทางเดิน</h5>
+                                  <p id="kwhwalkwayf5" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                              </div>      
+                          </div>
+                          <div class="col">
+                              <div id ="bgroom501" class="card shadow-lg">
+                                  <h5 class="card-header text-center">501</h5>
+                                  <p id="kwhroom501" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                              </div>   
+                          </div>   
+                          <div class="col">
+                            <div id ="bgroom502" class="card shadow-lg">
+                                <h5 class="card-header text-center">502</h5>
+                                <p id="kwhroom502" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                            </div>   
+                        </div>                    
+                      </div>  
+                      <div class="row m-3">
+                          <div class="col">
+                              <div id ="bgroom503" class="card shadow-lg">
+                                  <h5 class="card-header text-center">503</h5>
+                                  <p id="kwhroom503" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                              </div>      
+                          </div>
+                          <div class="col">
+                              <div id ="bgroom504" class="card shadow-lg">
+                                  <h5 class="card-header text-center">504</h5>
+                                  <p id="kwhroom504" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                              </div>   
+                          </div>
+                          <div class="col">
+                            <div id ="bgroom505" class="card shadow-lg">
+                                <h5 class="card-header text-center">505</h5>
+                                <p id="kwhroom505" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                            </div>   
+                        </div>
+                      </div> 
+                      <div class="row m-3">
+                        <div class="col">
+                            <div id ="bgroom506" class="card shadow-lg">
+                                <h5 class="card-header text-center">506</h5>
+                                <p id="kwhroom506" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                            </div>      
+                        </div>
+                        <div class="col">
+                            <div id ="bgroom507" class="card shadow-lg">
+                                <h5 class="card-header text-center">507</h5>
+                                <p id="kwhroom507" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                            </div>   
+                        </div>
+                        <div class="col">
+                          <div id ="bgroom508" class="card shadow-lg">
+                              <h5 class="card-header text-center">508</h5>
+                              <p id="kwhroom508" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                          </div>   
+                      </div>
+                    </div>  
+                    <div class="row m-3">
+                        <div class="col">
+                            <div id ="bgroom509" class="card shadow-lg">
+                                <h5 class="card-header text-center">509</h5>
+                                <p id="kwhroom509" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                            </div>      
+                        </div>
+                        <div class="col">
+                            <div id ="bgroom510" class="card shadow-lg">
+                                <h5 class="card-header text-center">510</h5>
+                                <p id="kwhroom510" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                            </div>   
+                        </div>
+                        <div class="col">
+                          <div id ="bgroom511" class="card shadow-lg">
+                              <h5 class="card-header text-center">511</h5>
+                              <p id="kwhroom511" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                          </div>   
+                      </div>
+                    </div> 
+                    <div class="row m-3">
+                        <div class="col">
+                            <div id ="bgroom512" class="card shadow-lg">
+                                <h5 class="card-header text-center">512</h5>
+                                <p id="kwhroom512" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                            </div>      
+                        </div>
+                        <div class="col">
+                            <div id ="bgroom513" class="card shadow-lg">
+                                <h5 class="card-header text-center">513</h5>
+                                <p id="kwhroom513" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                            </div>   
+                        </div>
+                        <div class="col">
+                          <div id ="bgroom514" class="card shadow-lg">
+                              <h5 class="card-header text-center">514</h5>
+                              <p id="kwhroom514" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                          </div>   
+                      </div>
+                    </div> 
+                    <div class="row m-3">
+                        <div class="col">
+                            <div id ="bgroom515" class="card shadow-lg">
+                                <h5 class="card-header text-center">515</h5>
+                                <p id="kwhroom515" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                            </div>      
+                        </div>
+                        <div class="col">
+                            <div id ="bgroom516" class="card shadow-lg">
+                                <h5 class="card-header text-center">516</h5>
+                                <p id="kwhroom516" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                            </div>   
+                        </div>
+                        <div class="col">
+                          <div id ="bgroom517" class="card shadow-lg">
+                              <h5 class="card-header text-center">517</h5>
+                              <p id="kwhroom517" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                          </div>   
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>           
+          </div>
+        </div>
+      </div>  
+  </div>
+</div>
+{% endblock content%}

@@ -1,0 +1,71 @@
+{% extends "whitegarden/layout/base.html" %} 
+{% block title %}
+Graph Room 
+{% endblock %}
+{% block content %}
+<div class="row" style="margin-top: 65px">
+  <!-- BLock 1 -->
+  <div class="d-flex justify-content-center shadow-lg ">
+    <div class="col p-3">
+        <div class="card text-white mb-1 gx-1 shadow-lg">
+          <div class="card-header text-center bg-light fs-1" style="color: black">
+            เปรียบเทียบการใช้พลังงานห้องพัก
+          </div>
+          <div class="card-body bg-warning" style="color: black">
+            <div class="row mt-1">
+              <div class="col">
+                <div class="card">
+                  <h5 class="card-header text-center">
+                    <div class="p-2 bd-highlight fs-4">แสดงการใช้พลังงานของแต่ละห้อง</div>
+                    <div  class="p-2 bd-highlight">ของวันที่ : <span id="graphdate"></span> <span>เวลา :</span><span id="graphtime"></span></div>
+                  </h5>
+                    <div class="row m-1">
+                        <div class="col">
+                            <div class="card shadow-lg bg-light fs-6">
+                                <h4 class="card-header text-center">ชั้นที่ 1<h4>
+                                <div id="chartAir" class="card-text text-center fs-6 mt-3" style="width: 100%; height: 500px;"></div>
+                            </div>   
+                        </div>                     
+                    </div> 
+                    <div class="row m-1">
+                        <div class="col">
+                            <div class="card shadow-lg bg-light fs-6">
+                                <h4 class="card-header text-center">ชั้นที่ 2<h4>
+                                <div id="chartroomf2" class="card-text text-center fs-6 mt-3" style="width: 100%; height: 500px;"></div>
+                            </div>   
+                        </div>                     
+                    </div>  
+                    <div class="row m-1">
+                        <div class="col">
+                            <div class="card shadow-lg bg-light fs-6">
+                                <h4 class="card-header text-center">ชั้นที่ 3<h4>
+                                <div id="chartroomf3" class="card-text text-center fs-6 mt-3" style="width: 100%; height: 500px;"></div>
+                            </div>   
+                        </div>                     
+                    </div> 
+                    <div class="row m-1">
+                        <div class="col">
+                            <div class="card shadow-lg bg-light fs-6">
+                                <h4 class="card-header text-center">ชั้นที่ 4<h4>
+                                <div id="chartroomf4" class="card-text text-center fs-6 mt-3" style="width: 100%; height: 500px;"></div>
+                            </div>   
+                        </div>                     
+                    </div>
+                    <div class="row m-1">
+                        <div class="col">
+                            <div class="card shadow-lg bg-light fs-6">
+                                <h4 class="card-header text-center">ชั้นที่ 5<h4>
+                                <div id="chartroomf5" class="card-text text-center fs-6 mt-3" style="width: 100%; height: 500px;"></div>
+                            </div>   
+                        </div>                     
+                    </div> 
+                </div>
+              </div>
+            </div> 
+               
+          </div>
+        </div>
+      </div>  
+  </div>
+</div>
+{% endblock content%}

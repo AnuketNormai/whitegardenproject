@@ -1,0 +1,171 @@
+{% extends "whitegarden/layout/base.html" %} 
+{% block title %}
+mdb dashboard
+{% endblock %}
+{% block content %}
+<div class="row" style="margin-top: 65px">
+  <!-- BLock 1 -->
+  <div class="d-flex justify-content-center shadow-lg ">
+    <div class="col p-3">
+        <div class="card text-white mb-1 gx-1 shadow-lg">
+          <div class="card-body bg-warning" style="color: black">
+            <div class="row mt-1">
+              <div class="col">
+                <div class="card">
+                  <h3 class="card-header text-center">อัตราการใช้พลังงาน</h3>
+                    <div class="row m-3">
+                        <div class="col">
+                            <div class="card bg-light shadow-lg">
+                                <h5 class="card-header text-center">ชั้น 1</h5>
+                                <p id="kwhdailymainfloor1" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                            </div>      
+                        </div>
+                        <div class="col">
+                            <div class="card bg-light shadow-lg">
+                                <h5 class="card-header text-center">ชั้น 2</h5>
+                                <p id="kwhdailymainfloor2" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                            </div>   
+                        </div>
+                        <div class="col">
+                            <div class="card bg-light shadow-lg">
+                                <h5 class="card-header text-center">ชั้น 3</h5>
+                                <p id="kwhdailymainfloor3" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                            </div>   
+                        </div>
+                        
+                    </div> 
+                    <!-- new row  -->
+                    <div class="row m-3">
+                        <div class="col">
+                            <div class="card bg-light shadow-lg">
+                                <h5 class="card-header text-center">ชั้น 4</h5>
+                                <p id="kwhdailymainfloor4" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                            </div>   
+                        </div>
+                        <div class="col">
+                            <div class="card bg-light shadow-lg">
+                                <h5 class="card-header text-center">ชั้น 5</h5>
+                                <p id="kwhdailymainfloor5" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                            </div>      
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <!-- new toppic 2-->
+            <div class="row mt-3">
+                <div class="col">
+                    <div class="card">
+                      <h3 class="card-header text-center">อัตราการใช้พลังงานปั้มน้ำ</h3>
+                        <div class="row m-3">
+                            <div class="col">
+                                <div class="card bg-light shadow-lg">
+                                    <h5 class="card-header text-center">MAIN 3P</h5>
+                                    <p id="kwhdailymainpump" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                                </div>      
+                            </div>
+                            <div class="col">
+                                <div class="card bg-light shadow-lg">
+                                    <h5 class="card-header text-center">ปั้ม 1</h5>
+                                    <p id="kwhdailypump1" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                                </div>   
+                            </div>
+                            <div class="col">
+                                <div class="card bg-light shadow-lg">
+                                    <h5 class="card-header text-center">ปั้ม 2</h5>
+                                    <p id="kwhdailypump2" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                                </div>   
+                            </div>
+                            <div class="col">
+                                <div class="card bg-light shadow-lg">
+                                    <h5 class="card-header text-center">ปั้ม 3</h5>
+                                    <p id="kwhdailypump3" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                                </div>   
+                            </div>
+                            
+                        </div> 
+                        <!-- new row  -->
+                        <div class="row m-3">
+                            <div class="col">
+                                <div class="card bg-light shadow-lg">
+                                    <h5 class="card-header text-center">ปั้ม 4</h5>
+                                    <p id="kwhdailypump4" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                                </div>   
+                            </div>
+                            <div class="col">
+                                <div class="card bg-light shadow-lg">
+                                    <h5 class="card-header text-center">ปั้ม 5</h5>
+                                    <p id="kwhdailypump5" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                                </div>      
+                            </div>
+                            <div class="col">
+                                <div class="card bg-light shadow-lg">
+                                    <h5 class="card-header text-center">ปั้ม 6</h5>
+                                    <p id="kwhdailypump6" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                                </div>      
+                            </div>
+                            <div class="col">
+                                <div class="card bg-light shadow-lg">
+                                    <h5 class="card-header text-center">ปั้ม 7</h5>
+                                    <p id="kwhdailypump7" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                                </div>      
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>           
+            <!-- new toppic 3-->
+            <div class="row mt-3">
+                <div class="col">
+                    <div class="card">
+                      <h3 class="card-header text-center">อัตราการใช้พลังงานอื่นๆ</h3>
+                        <div class="row m-3">
+                            <div class="col">
+                                <div class="card bg-light shadow-lg">
+                                    <h5 class="card-header text-center">Air Main F</h5>
+                                    <p id="kwhairf" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                                </div>      
+                            </div>
+                            <div class="col">
+                                <div class="card bg-light shadow-lg">
+                                    <h5 class="card-header text-center">Building</h5>
+                                    <p id="kwhbuilding" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                                </div>   
+                            </div>
+                            <div class="col">
+                                <div class="card bg-light shadow-lg">
+                                    <h5 class="card-header text-center">EDB</h5>
+                                    <p id="kwhEDB" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                                </div>   
+                            </div>                          
+                        </div> 
+                        <!-- new row  -->
+                        <div class="row m-3"> 
+                            <div class="col">
+                                <div class="card bg-light shadow-lg">
+                                    <h5 class="card-header text-center">MINER 1</h5>
+                                    <p id="kwhminer1" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                                </div>      
+                            </div> 
+                            <div class="col">
+                                <div class="card bg-light shadow-lg">
+                                    <h5 class="card-header text-center">MINER 2</h5>
+                                    <p id="kwhminer2" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                                </div>      
+                            </div>
+                            <div class="col">
+                                <div class="card bg-light shadow-lg">
+                                    <h5 class="card-header text-center">MINER 3</h5>
+                                    <p id="kwhminer3" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                                </div>      
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+          </div>
+        </div>
+      </div>  
+    </div>
+</div>
+{% endblock content%}

@@ -1,0 +1,37 @@
+{% extends "whitegarden/layout/base.html" %} 
+{% block title %}
+Graph Air 
+{% endblock %}
+{% block content %}
+<div class="row" style="margin-top: 65px">
+  <!-- BLock 1 -->
+  <div class="d-flex justify-content-center shadow-lg ">
+    <div class="col p-3">
+        <div class="card text-white mb-1 gx-1 shadow-lg">
+          <div class="card-header text-center bg-light fs-1" style="color: black">
+            เปรียบเทียบการใช้พลังงานแอร์
+          </div>
+          <div class="card-body bg-warning" style="color: black">
+            <div class="row mt-1">
+              <div class="col">
+                <div class="card">
+                  <h5 class="card-header text-center">
+                    <div class="p-2 bd-highlight fs-4">แสดงการใช้พลังงานแอร์แต่ละตัว</div>
+                    <div  class="p-2 bd-highlight">ของวันที่ : <span id="graphdate"></span> <span>เวลา :</span><span id="graphtime"></span></div>
+                  </h5>
+                    <div class="row m-3">
+                        <div class="col">
+                            <div class="card shadow-lg bg-light">
+                                <p id="chartAir" class="card-text text-center mt-5" style="width: 100%; height: 500px;"></p>
+                            </div>   
+                        </div>                     
+                    </div>    
+                </div>
+              </div>
+            </div> 
+          </div>
+        </div>
+      </div>  
+  </div>
+</div>
+{% endblock content%}

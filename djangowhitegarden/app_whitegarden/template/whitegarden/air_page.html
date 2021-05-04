@@ -1,0 +1,135 @@
+{% extends "whitegarden/layout/base.html" %} 
+{% block title %}
+air conditioner 
+{% endblock %}
+{% block content %}
+<div class="row" style="margin-top: 65px">
+  <!-- BLock 1 -->
+  <div class="d-flex justify-content-center shadow-lg ">
+    <div class="col p-3">
+        <div class="card text-white mb-1 gx-1 shadow-lg">
+          <div class="card-header text-center bg-light fs-1" style="color: black">
+            สถานะการใช้พลังงานเครื่องปรับอากาศ
+          </div>
+          <div class="card-body bg-warning" style="color: black">
+            <div class="row mt-1">
+              <div class="col">
+                <div class="card">
+                  <h5 class="card-header text-center">ล็อบบี้ และ ห้องอาหาร</h5>
+                    <div class="row m-3">
+                        <div class="col">
+                            <div id ="bgair1" class="card shadow-lg">
+                                <h5 class="card-header text-center">แอร์ตัวที่ 1</h5>
+                                <p id="kwhair1" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                            </div>   
+                        </div>
+                        <div class="col">
+                            <div id ="bgair2" class="card shadow-lg">
+                                <h5 class="card-header text-center">แอร์ตัวที่ 2</h5>
+                                <p id="kwhair2" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                            </div>   
+                        </div>                       
+                    </div>  
+                    <div class="row m-3">
+                        <div class="col">
+                            <div id ="bgair3" class="card shadow-lg">
+                                <h5 class="card-header text-center">แอร์ตัวที่ 3</h5>
+                                <p id="kwhair3" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                            </div>      
+                        </div>
+                        <div class="col">
+                            <div id ="bgair4" class="card shadow-lg">
+                                <h5 class="card-header text-center">แอร์ตัวที่ 4</h5>
+                                <p id="kwhair4" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                            </div>   
+                        </div>
+                    </div>   
+                </div>
+              </div>
+            </div> 
+             <!-- topic 2  -->
+             <div class="row mt-1">
+                <div class="col">
+                  <div class="card">
+                    <h5 class="card-header text-center">ห้องสัมนา</h5>
+                      <div class="row m-3">
+                          <div class="col">
+                              <div id ="bgair5" class="card shadow-lg">
+                                  <h5 class="card-header text-center">แอร์ตัวที่ 5</h5>
+                                  <p id="kwhair5" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                              </div>      
+                          </div>
+                          <div class="col">
+                              <div id ="bgair6" class="card shadow-lg">
+                                  <h5 class="card-header text-center">แอร์ตัวที่ 6</h5>
+                                  <p id="kwhair6" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                              </div>   
+                          </div>                       
+                      </div>  
+                      <div class="row m-3">
+                          <div class="col">
+                              <div id ="bgair7" class="card shadow-lg">
+                                  <h5 class="card-header text-center">แอร์ตัวที่ 7</h5>
+                                  <p id="kwhair7" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                              </div>      
+                          </div>
+                          <div class="col">
+                              <div id ="bgair8" class="card shadow-lg">
+                                  <h5 class="card-header text-center">แอร์ตัวที่ 8</h5>
+                                  <p id="kwhair8" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                              </div>   
+                          </div>
+                      </div>   
+                  </div>
+                </div>
+              </div>
+            <!-- topic 3  -->
+            <div class="row mt-1">
+                <div class="col">
+                  <div class="card">
+                    <h5 class="card-header text-center">ห้องเก็บของ</h5>
+                        <div class="row m-3">
+                          <div class="col">
+                              <div id ="bgair9" class="card shadow-lg">
+                                  <h5 class="card-header text-center">แอร์ตัวที่ 9</h5>
+                                  <p id="kwhair9" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                              </div>      
+                          </div>
+                          <div class="col">
+                              <div id ="bgair10" class="card shadow-lg">
+                                  <h5 class="card-header text-center">แอร์ตัวที่ 10</h5>
+                                  <p id="kwhair10" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                              </div>   
+                          </div>                       
+                        </div>   
+                  </div>
+                </div>
+            </div>
+            <!-- topic 4  -->
+            <div class="row mt-1">
+                <div class="col">
+                  <div class="card">
+                    <h5 class="card-header text-center">ห้องน้ำ</h5>
+                        <div class="row m-3">
+                          <div class="col">
+                              <div id ="bgair11" class="card shadow-lg">
+                                  <h5 class="card-header text-center">แอร์ตัวที่ 11</h5>
+                                  <p id="kwhair11" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                              </div>      
+                          </div>
+                          <div class="col">
+                              <div id ="bgair12" class="card shadow-lg">
+                                  <h5 class="card-header text-center">แอร์ตัวที่ 12</h5>
+                                  <p id="kwhair12" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                              </div>   
+                          </div>                       
+                        </div>   
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+  </div>
+</div>
+{% endblock content%}

@@ -1,0 +1,19 @@
+    Alias /static /home/whitegardenwebadmin/djangowhitegarden/static
+	<Directory /home/whitegardenwebadmin/djangowhitegarden/static>
+		Require all granted
+	</Directory>
+
+	Alias /media /home/whitegardenwebadmin/djangowhitegarden/media
+	<Directory /home/whitegardenwebadmin/djangowhitegarden/media>
+		Require all granted
+	</Directory>
+
+	<Directory /home/whitegardenwebadmin/djangowhitegarden/djangowhitegarden>
+				<Files wsgi.py>
+			Require all granted
+		</Files>
+		</Directory>
+
+	WSGIScriptAlias / /home/whitegardenwebadmin/djangowhitegarden/djangowhitegarden/wsgi.py
+	WSGIDaemonProcess django_app python-path=/home/whitegardenwebadmin/djangowhitegarden python-home=/home/whitegardenwebadmin/venv
+	WSGIProcessGroup django_app

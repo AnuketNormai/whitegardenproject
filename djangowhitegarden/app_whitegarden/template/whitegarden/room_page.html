@@ -1,0 +1,2178 @@
+{% extends "whitegarden/layout/base.html" %} 
+{% block title %}
+All Room
+{% endblock %}
+{% block content %}
+<div class="row" style="margin-top: 65px">
+  <!-- BLock 1 -->
+  <div class="d-flex justify-content-center shadow-lg ">
+    <div class="col p-3">
+        <div class="card text-white mb-1 gx-1 shadow-lg">
+          <div class="card-header text-center bg-light fs-1" style="color: black">
+            เดอะไวท์การ์เด้น สระบุรี
+          </div>
+          <div class="card-body bg-warning" style="color: black">
+            <div class="row mt-1">
+              <div class="col">
+                <div class="card">
+                  <h5 class="card-header text-center">ชั้น 1</h5>
+                    <div class="row m-1">
+                        <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgarooma1" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#ModalA1"> A1</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="ModalA1" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitleA1" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitleA1">Floor 1 (Air Condition 1)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                        <p>ค่ากระแสไฟฟ้า : <span id="todayampA1"></span></p>
+                                        <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhair1"></span></p>
+                                        <p>พลังงานที่ใช้วันนี้ : <span id="todaykwhA1"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgarooma2" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#ModalA2"> A2</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="ModalA2" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitleA2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitleA2">Floor 1 (Air Condition 2)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayampA2"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhair2"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwhA2"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>   
+                        <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgarooma3" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#ModalA3"> A3</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="ModalA3" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitleA3" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitleA3">Floor 1 (Air Condition 3)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayampA3"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhair3"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwhA3"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div> 
+                        <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgarooma4" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#ModalA4"> A4</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="ModalA4" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitleA4" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitleA4">Floor 1 (Air Condition 4)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayampA4"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhair4"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwhA4"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>      
+                        <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgarooma5" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#ModalA5"> A5</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="ModalA5" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitleA5" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitleA5">Floor 1 (Air Condition 5)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayampA5"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhair5"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwhA5"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgarooma6" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#ModalA6"> A6</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="ModalA6" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitleA6" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitleA6">Floor 1 (Air Condition 6)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayampA6"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhair6"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwhA6"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>               
+                    </div>  
+                    <div class="row m-1">
+                        <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgarooma7" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#ModalA7"> A7</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="ModalA7" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitleA7" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitleA7">Floor 1 (Air Condition 7)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayampA7"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhair7"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwhA7"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgarooma8" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#ModalA8"> A8</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="ModalA8" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitleA8" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitleA8">Floor 1 (Air Condition 8)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayampA8"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhair8"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwhA8"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>   
+                        <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgarooma9" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#ModalA9"> A9</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="ModalA9" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitleA9" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitleA9">Floor 1 (Air Condition 9)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayampA9"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhair9"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwhA9"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div> 
+                        <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgarooma10" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#ModalA10"> A10</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="ModalA10" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitleA10" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitleA10">Floor 1 (Air Condition 10)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayampA10"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhair10"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwhA10"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>      
+                        <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgarooma11" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#ModalA11"> A11</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="ModalA11" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitleA11" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitleA11">Floor 1 (Air Condition 11)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayampA11"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhair11"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwhA11"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgarooma12" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#ModalA12"> A12</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="ModalA12" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitleA12" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitleA12">Floor 1 (Air Condition 12)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayampA12"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhair12"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwhA12"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>               
+                    </div>   
+                </div>
+              </div>
+            </div> 
+             <!-- Floor 2  -->
+             <div class="row mt-1">
+                <div class="col">
+                  <div class="card">
+                    <h5 class="card-header text-center">ชั้น 2</h5>
+                      <div class="row m-1 gx-1">
+                          <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroomwalkwayf2" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modalwalkwayf2">ทางเดิน</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modalwalkwayf2" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitlewalkwayf2">ชั้น 2 (ไฟทางเดิน)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayampwalkwayf2"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhwalkwayf2"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwhwalkwayf2"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>  
+                          </div>
+                          <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom201" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal201">201</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal201" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle201">ชั้น 2 (ห้อง 201)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp201"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom201"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh201"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>   
+                          </div>   
+                          <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom202" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal202">202</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal202" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle202">ชั้น 2 (ห้อง 202)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp202"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom202"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh202"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>    
+                          </div> 
+                          <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom203" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal203">203</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal203" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle203">ชั้น 2 (ห้อง 203)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp203"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom203"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh203"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>   
+                          </div>      
+                          <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom204" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal204">204</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal204" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle204">ชั้น 2 (ห้อง 204)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp204"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom204"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh204"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>   
+                          </div>
+                          <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom205" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal205">205</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal205" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle205">ชั้น 2 (ห้อง 205)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp205"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom205"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh205"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>    
+                          </div> 
+                          <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom206" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal206">206</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal206" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle206">ชั้น 2 (ห้อง 206)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp206"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom206"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh206"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom207" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal207">207</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal207" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle207">ชั้น 2 (ห้อง 207)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp207"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom207"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh207"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>   
+                        <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom208" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal208">208</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal208" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle208">ชั้น 2 (ห้อง 208)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp208"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom208"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh208"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>               
+                      </div>                  
+                      <div class="row m-1 gx-1">
+                        <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom209" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal209">209</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal209" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle209">ชั้น 2 (ห้อง 209)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp209"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom209"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh209"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>      
+                        <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom210" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal210">210</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal210" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle210">ชั้น 2 (ห้อง 210)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp210"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom210"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh210"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom211" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal211">211</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal211" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle211">ชั้น 2 (ห้อง 211)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp211"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom211"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh211"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom212" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal212">212</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal212" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle212">ชั้น 2 (ห้อง 212)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp212"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom212"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh212"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom213" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal213">213</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal213" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle213">ชั้น 2 (ห้อง 213)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp213"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom213"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh213"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>   
+                        <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom214" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal214">214</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal214" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle214">ชั้น 2 (ห้อง 214)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp214"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom214"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh214"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div> 
+                        <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom215" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal215">215</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal215" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle215">ชั้น 2 (ห้อง 215)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp215"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom215"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh215"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>      
+                        <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom216" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal216">216</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal216" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle216">ชั้น 2 (ห้อง 216)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp216"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom216"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh216"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom217" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal217">217</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal217" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle217">ชั้น 2 (ห้อง 217)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp217"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom217"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh217"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>               
+                    </div>   
+                  </div>
+                </div>
+              </div> 
+            <!-- Floor 3  -->
+            <div class="row mt-1">
+                <div class="col">
+                    <div class="card">
+                    <h5 class="card-header text-center">ชั้น 3</h5>
+                        <div class="row m-1 gx-1">
+                            <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroomwalkwayf3" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modalwalkwayf3">ทางเดิน</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modalwalkwayf3" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf3" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitlewalkwayf3">ชั้น 3 (ไฟทางเดิน)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayampwalkwayf3"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhwalkwayf3"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwhwalkwayf3"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>  
+                            </div>
+                            <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom301" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal301">301</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal301" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle301">ชั้น 3 (ห้อง 301)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp301"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom301"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh301"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>   
+                            </div>   
+                            <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom302" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal302">302</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal302" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle302">ชั้น 3 (ห้อง 302)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp302"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom302"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh302"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>    
+                            </div> 
+                            <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom303" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal303">303</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal303" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle303">ชั้น 3 (ห้อง 303)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp303"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom303"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh303"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>   
+                            </div>      
+                            <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom304" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal304">304</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal304" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle304">ชั้น 3 (ห้อง 304)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp304"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom304"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh304"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>   
+                            </div>
+                            <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom305" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal305">305</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal305" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle305">ชั้น 3 (ห้อง 305)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp305"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom305"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh305"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>    
+                            </div> 
+                            <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom306" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal306">306</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal306" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle306">ชั้น 3 (ห้อง 306)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp306"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom306"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh306"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom307" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal307">307</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal307" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle307">ชั้น 3 (ห้อง 307)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp307"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom307"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh307"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>   
+                        <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom308" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal308">308</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal308" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle308">ชั้น 3 (ห้อง 308)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp308"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom308"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh308"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>               
+                        </div>                  
+                        <div class="row m-1 gx-1">
+                        <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom309" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal309">309</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal309" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle309">ชั้น 3 (ห้อง 309)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp309"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom309"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh309"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>      
+                        <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom310" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal310">310</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal310" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle310">ชั้น 3 (ห้อง 310)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp310"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom310"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh310"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom311" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal311">311</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal311" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle311">ชั้น 3 (ห้อง 311)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp311"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom311"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh311"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom312" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal312">312</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal312" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle312">ชั้น 3 (ห้อง 312)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp312"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom312"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh312"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom313" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal313">313</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal313" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle313">ชั้น 3 (ห้อง 313)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp313"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom313"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh313"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>   
+                        <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom314" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal314">314</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal314" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle314">ชั้น 3 (ห้อง 314)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp314"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom314"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh314"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div> 
+                        <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom315" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal315">315</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal315" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle315">ชั้น 3 (ห้อง 315)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp315"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom315"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh315"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>      
+                        <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom316" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal316">316</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal316" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle316">ชั้น 3 (ห้อง 316)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp316"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom316"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh316"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom317" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal317">317</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal317" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle317">ชั้น 3 (ห้อง 317)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp317"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom317"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh317"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>               
+                    </div>   
+                    </div>
+                </div>
+            </div>
+            <!-- Floor 4  -->
+            <div class="row mt-1">
+                <div class="col">
+                    <div class="card">
+                    <h5 class="card-header text-center">ชั้น 4</h5>
+                        <div class="row m-1 gx-1">
+                            <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroomwalkwayf4" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modalwalkwayf4">ทางเดิน</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modalwalkwayf4" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf4" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitlewalkwayf4">ชั้น 4 (ไฟทางเดิน)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayampwalkwayf4"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhwalkwayf4"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwhwalkwayf4"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>  
+                            </div>
+                            <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom401" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal401">401</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal401" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle401">ชั้น 4 (ห้อง 401)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp401"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom401"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh401"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>   
+                            </div>   
+                            <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom402" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal402">402</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal402" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle402">ชั้น 4 (ห้อง 402)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp402"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom402"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh402"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>    
+                            </div> 
+                            <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom403" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal403">403</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal403" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle403">ชั้น 4 (ห้อง 403)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp403"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom403"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh403"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>   
+                            </div>      
+                            <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom404" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal404">404</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal404" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle404">ชั้น 4 (ห้อง 404)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp404"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom404"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh404"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>   
+                            </div>
+                            <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom405" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal405">405</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal405" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle405">ชั้น 4 (ห้อง 405)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp405"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom405"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh405"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>    
+                            </div> 
+                            <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom406" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal406">406</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal406" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle406">ชั้น 4 (ห้อง 406)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp406"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom406"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh406"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom407" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal407">407</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal407" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle407">ชั้น 4 (ห้อง 407)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp407"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom407"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh407"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>   
+                        <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom408" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal408">408</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal408" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle408">ชั้น 4 (ห้อง 408)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp408"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom408"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh408"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>               
+                        </div>                  
+                        <div class="row m-1 gx-1">
+                        <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom409" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal409">409</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal409" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle409">ชั้น 4 (ห้อง 409)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp409"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom409"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh409"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>      
+                        <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom410" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal410">410</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal410" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle410">ชั้น 4 (ห้อง 410)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp410"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom410"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh410"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom411" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal411">411</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal411" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle411">ชั้น 4 (ห้อง 411)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp411"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom411"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh411"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom412" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal412">412</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal412" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle412">ชั้น 4 (ห้อง 412)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp412"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom412"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh412"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom413" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal413">413</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal413" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle413">ชั้น 4 (ห้อง 413)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp413"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom413"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh413"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>   
+                        <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom414" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal414">414</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal414" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle414">ชั้น 4 (ห้อง 414)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp414"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom414"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh414"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div> 
+                        <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom415" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal415">415</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal415" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle415">ชั้น 4 (ห้อง 415)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp415"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom415"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh415"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>      
+                        <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom416" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal416">416</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal416" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle416">ชั้น 4 (ห้อง 416)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp416"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom416"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh416"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom417" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal417">417</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal417" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle417">ชั้น 4 (ห้อง 417)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp417"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom417"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh417"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>               
+                    </div>   
+                    </div>
+                </div>
+            </div>
+            <!-- Floor 5  -->
+            <div class="row mt-1">
+                <div class="col">
+                    <div class="card">
+                    <h5 class="card-header text-center">ชั้น 5</h5>
+                        <div class="row m-1 gx-1">
+                            <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroomwalkwayf5" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modalwalkwayf5">ทางเดิน</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modalwalkwayf5" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf5" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitlewalkwayf5">ชั้น 5 (ไฟทางเดิน)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayampwalkwayf5"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhwalkwayf5"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwhwalkwayf5"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>  
+                            </div>
+                            <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom501" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal501">501</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal501" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle501">ชั้น 5 (ห้อง 501)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp501"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom501"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh501"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>   
+                            </div>   
+                            <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom502" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal502">502</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal502" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle502">ชั้น 5 (ห้อง 502)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp502"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom502"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh502"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>    
+                            </div> 
+                            <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom503" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal503">503</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal503" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle503">ชั้น 5 (ห้อง 503)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp503"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom503"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh503"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>   
+                            </div>      
+                            <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom504" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal504">504</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal504" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle504">ชั้น 5 (ห้อง 504)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp504"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom504"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh504"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>   
+                            </div>
+                            <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom505" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal505">505</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal505" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle505">ชั้น 5 (ห้อง 505)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp505"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom505"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh505"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>    
+                            </div> 
+                            <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom506" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal506">506</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal506" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle506">ชั้น 5 (ห้อง 506)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp506"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom506"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh506"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom507" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal507">507</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal507" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle507">ชั้น 5 (ห้อง 507)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp507"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom507"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh507"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>   
+                        <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom508" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal508">508</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal508" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle508">ชั้น 5 (ห้อง 508)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp508"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom508"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh508"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>               
+                        </div>                  
+                        <div class="row m-1 gx-1">
+                        <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom509" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal509">509</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal509" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle509">ชั้น 5 (ห้อง 509)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp509"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom509"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh509"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>      
+                        <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom510" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal510">510</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal510" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle510">ชั้น 5 (ห้อง 510)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp510"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom510"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh510"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom511" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal511">511</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal511" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle511">ชั้น 5 (ห้อง 511)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp511"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom511"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh511"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom512" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal512">512</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal512" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle512">ชั้น 5 (ห้อง 512)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp512"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom512"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh512"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom513" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal513">513</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal513" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle513">ชั้น 5 (ห้อง 513)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp513"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom513"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh513"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>   
+                        <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom514" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal514">514</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal514" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle514">ชั้น 5 (ห้อง 514)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp514"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom514"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh514"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div> 
+                        <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom515" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal515">515</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal515" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle515">ชั้น 5 (ห้อง 515)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp515"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom515"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh515"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>      
+                        <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom516" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal516">516</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal516" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle516">ชั้น 5 (ห้อง 516)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp516"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom516"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh516"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-lg"> 
+                                <button id ="bgaroom517" type="button" class="btn btn-light fs-6 text-center" style="height: 75px;" 
+                                data-toggle="modal" 
+                                data-target="#Modal517">517</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal517" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitlewalkwayf2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-warning">
+                                            <h5 class="modal-title" id="ModalLongTitle517">ชั้น 5 (ห้อง 517)</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>ค่ากระแสไฟฟ้า : <span id="todayamp517"></span></p>
+                                            <p>พลังงานไฟฟ้าเฉลี่ยต่อวัน(เก็บค่าทุกเที่ยงวัน) : <span id="kwhroom517"></span></p>
+                                            <p>พลังงานที่ใช้วันนี้ : <span id="todaykwh517"></span></p>
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>               
+                    </div>   
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>  
+  </div>
+</div>
+{% endblock content%}

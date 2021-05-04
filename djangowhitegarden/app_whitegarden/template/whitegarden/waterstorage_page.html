@@ -1,0 +1,269 @@
+{% extends "whitegarden/layout/base.html" %} 
+{% block title %}
+water dashboard
+{% endblock %}
+{% block content %}
+<div class="row" style="margin-top: 65px">
+  <!-- BLock 1 -->
+  <div class="d-flex justify-content-center shadow-lg ">
+    <div class="col p-3">
+        <div class="card text-white mb-1 gx-1 shadow-lg">
+          <div class="card-header text-center bg-light fs-1" style="color: black">
+            ปริมาณการใช้น้ำ และสถานะการทำงานของปั้มน้ำ
+          </div>
+          <div class="card-body bg-warning" style="color: black">
+            <div class="row mt-1">
+              <div class="col">
+                <div class="card">
+                  <h5 class="card-header text-center">ชั้นพื้นดิน</h5>
+                    <div class="row m-3">
+                        <div class="col">
+                            <div class="card bg-light shadow-lg">
+                                <h5 class="card-header text-center">ระดับน้ำ</h5>
+                                <p id="waterlevelground" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                            </div>      
+                        </div>
+                        <div class="col">
+                            <div class="card bg-light shadow-lg">
+                                <h5 class="card-header text-center">ใช้น้ำ/วัน</h5>
+                                <p id="waterusageground" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                            </div>   
+                        </div>
+                    </div>    
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <h5 class="card-header text-center">ชั้นดาดฟ้า</h5>
+                    <div class="row m-3">
+                        <div class="col">
+                            <div class="card bg-light shadow-lg ">
+                                <h5 class="card-header text-center">ระดับน้ำ</h5>
+                                <p id="waterlevelroof" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                            </div>      
+                        </div>
+                        <div class="col">
+                            <div class="card bg-light shadow-lg">
+                                <h5 class="card-header text-center">ใช้น้ำ/วัน</h5>
+                                <p id="waterusageroof" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                            </div>   
+                        </div>
+                    </div>   
+                </div>
+              </div>
+            </div>
+            <!-- new row -->
+            <div class="row mt-3">
+              <div class="col">
+                <div class="card ">
+                  <h5 class="card-header text-center bg-light fs-3">เปอร์เซ็นการทำงานของปั้ม และค่าพลังงาน/วัน</h5>
+                  <div class="row m-1">
+                    <div class="col">
+                      <div id="pump1" class="card">
+                        <h5 class="card-header"> 
+                          <div class="d-flex justify-content-between m-0 pl-5">
+                            <div></div>
+                            <p class="fs-4 m-0">ปั้มตัวที่ 1</p>
+                            <i id="statuspump1" class="fa fa-power-off " style="color:gray; font-size:30px;"></i>
+                          </div>                                                                       
+                        </h5> 
+                        <!-- start block -->
+                          <div class="row m-3">
+                              <div class="col">
+                                  <div id="bgwpump1" class="card shadow-lg ">
+                                      <h5 class="card-header text-center">ทำงาน</h5>
+                                      <p id="percentpump1" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                                  </div>      
+                              </div>
+                              <div class="col">
+                                  <div id="bgupump1" class="card shadow-lg">
+                                      <h5 class="card-header text-center">พลังงาน</h5>
+                                      <p id="unitpump1" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                                  </div>   
+                              </div>
+                          </div> 
+                        <!-- End block -->  
+                      </div>
+                    </div>
+                    <div class="col">
+                        <div id="pump2" class="card">
+                          <h5 class="card-header"> 
+                            <div class="d-flex justify-content-between m-0 pl-5">
+                              <div></div>
+                              <p class="fs-4 m-0">ปั้มตัวที่ 2</p>
+                              <i id="statuspump2" class="fa fa-power-off " style="color:gray; font-size:30px;"></i>
+                            </div>                                                                       
+                          </h5>
+                            <!-- start block -->
+                            <div class="row m-3">
+                              <div class="col">
+                                  <div id="bgwpump2" class="card shadow-lg ">
+                                      <h5 class="card-header text-center">ทำงาน</h5>
+                                      <p id="percentpump2" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                                  </div>      
+                              </div>
+                              <div class="col">
+                                  <div id="bgupump2" class="card shadow-lg">
+                                      <h5 class="card-header text-center">พลังงาน</h5>
+                                      <p id="unitpump2" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                                  </div>   
+                              </div>
+                          </div> 
+                          <!-- End block -->  
+                        </div>
+                    </div>
+                  </div> 
+                  <!-- pump 3-4 -->
+                  <div class="row m-1">
+                    <div class="col">
+                        <div id="pump3" class="card">
+                          <h5 class="card-header"> 
+                            <div class="d-flex justify-content-between m-0 pl-5">
+                              <div></div>
+                              <p class="fs-4 m-0">ปั้มตัวที่ 3</p>
+                              <i id="statuspump3" class="fa fa-power-off " style="color:gray; font-size:30px;"></i>
+                            </div>                                                                       
+                          </h5>
+                            <!-- start block -->
+                            <div class="row m-3">
+                              <div class="col">
+                                  <div id="bgwpump3" class="card shadow-lg ">
+                                      <h5 class="card-header text-center">ทำงาน</h5>
+                                      <p id="percentpump3" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                                  </div>      
+                              </div>
+                              <div class="col">
+                                  <div id="bgupump3" class="card shadow-lg">
+                                      <h5 class="card-header text-center">พลังงาน</h5>
+                                      <p id="unitpump3" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                                  </div>   
+                              </div>
+                          </div> 
+                          <!-- End block -->
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div id="pump4" class="card">
+                          <h5 class="card-header"> 
+                            <div class="d-flex justify-content-between m-0 pl-5">
+                              <div></div>
+                              <p class="fs-4 m-0">ปั้มตัวที่ 4</p>
+                              <i id="statuspump4" class="fa fa-power-off " style="color:gray; font-size:30px;"></i>
+                            </div>                                                                       
+                          </h5>
+                            <!-- start block -->
+                            <div class="row m-3">
+                              <div class="col">
+                                  <div id="bgwpump4" class="card shadow-lg ">
+                                      <h5 class="card-header text-center">ทำงาน</h5>
+                                      <p id="percentpump4" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                                  </div>      
+                              </div>
+                              <div class="col">
+                                  <div id="bgupump4" class="card shadow-lg">
+                                      <h5 class="card-header text-center">พลังงาน</h5>
+                                      <p id="unitpump4" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                                  </div>   
+                              </div>
+                          </div> 
+                          <!-- End block -->
+                        </div>
+                    </div>
+                  </div>
+                  <!-- pump 5-6 -->
+                  <div class="row m-1">
+                    <div class="col">
+                        <div id="pump5" class="card">
+                          <h5 class="card-header"> 
+                            <div class="d-flex justify-content-between m-0 pl-5">
+                              <div></div>
+                              <p class="fs-4 m-0">ปั้มตัวที่ 5</p>
+                              <i id="statuspump5" class="fa fa-power-off " style="color:gray; font-size:30px;"></i>
+                            </div>                                                                       
+                          </h5>
+                            <!-- start block -->
+                            <div class="row m-3">
+                              <div class="col">
+                                  <div id="bgwpump5" class="card shadow-lg ">
+                                      <h5 class="card-header text-center">ทำงาน</h5>
+                                      <p id="percentpump5" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                                  </div>      
+                              </div>
+                              <div class="col">
+                                  <div id="bgupump5" class="card shadow-lg">
+                                      <h5 class="card-header text-center">พลังงาน</h5>
+                                      <p id="unitpump5" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                                  </div>   
+                              </div>
+                          </div> 
+                          <!-- End block -->
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div id="pump6" class="card">
+                          <h5 class="card-header"> 
+                            <div class="d-flex justify-content-between m-0 pl-5">
+                              <div></div>
+                              <p class="fs-4 m-0">ปั้มตัวที่ 6</p>
+                              <i id="statuspump6" class="fa fa-power-off " style="color:gray; font-size:30px;"></i>
+                            </div>                                                                       
+                          </h5>
+                            <!-- start block -->
+                            <div class="row m-3">
+                              <div class="col">
+                                  <div id="bgwpump6" class="card shadow-lg ">
+                                      <h5 class="card-header text-center">ทำงาน</h5>
+                                      <p id="percentpump6" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                                  </div>      
+                              </div>
+                              <div class="col">
+                                  <div id="bgupump6" class="card shadow-lg">
+                                      <h5 class="card-header text-center">พลังงาน</h5>
+                                      <p id="unitpump6" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                                  </div>   
+                              </div>
+                          </div> 
+                          <!-- End block -->
+                        </div>
+                    </div>
+                  </div>
+                  <!-- pump 7 -->
+                  <div class="row m-1">
+                    <div class="col">
+                        <div id="pump7" class="card">
+                          <h5 class="card-header"> 
+                            <div class="d-flex justify-content-between m-0 pl-5">
+                              <div></div>
+                              <p class="fs-4 m-0">ปั้มตัวที่ 7</p>
+                              <i id="statuspump7" class="fa fa-power-off " style="color:gray; font-size:30px;"></i>
+                            </div>                                                                       
+                          </h5>
+                            <!-- start block -->
+                            <div class="row m-3">
+                              <div class="col">
+                                  <div id="bgwpump7" class="card shadow-lg ">
+                                      <h5 class="card-header text-center">ทำงาน</h5>
+                                      <p id="percentpump7" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                                  </div>      
+                              </div>
+                              <div class="col">
+                                  <div id="bgupump7" class="card shadow-lg">
+                                      <h5 class="card-header text-center">พลังงาน</h5>
+                                      <p id="unitpump7" class="card-text text-center fs-4 mt-5" style="height: 75px;"></p>
+                                  </div>   
+                              </div>
+                          </div> 
+                          <!-- End block -->
+                        </div>
+                    </div>
+                    <div class="col"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+  </div>
+</div>
+{% endblock content%}
